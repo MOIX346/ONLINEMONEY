@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Slab:100,400');
+    body {
+        text-align: center;
+        background-color: #120f0b;
+        color: #04B404;
+        width: 800px;
+        margin: 0 auto;
+        background-attachment: fixed;
+        font: normal 1em/1.38 'Inter Regular';
+    } 
+      .container {
+        float: left;
+      }
+      
+      .container .container {
+        width: 100%;
+        height: 51px;
+        margin-top: 11px;
+      }
+      
+      .container .element {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        min-height: 48px;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      
+      .element {
+        float: left;
+      }
+      
+      .text {
+        float: left;
+      }
+      
+    
+    img {
+        width: 300px;
+    }
+    
+    h1,h2,h3,p {
+        text-align: left;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 60px;
+        text-align: center;
+        margin: 40px auto 80px;
+    }
+    
+    h1, h3 {
+        color: #01f204;
+        font-weight: 100;
+    }
+    
+    h2 {
+        text-decoration: underline;
+    }
+    
+    p {
+        color: #fff;
+        margin: 10px 40px;
+        font-weight: 100;
+    }
+    
+    p:hover {
+        color: #aaffaa;
+        cursor: pointer;
+    }
+
+
+    
+    .pressed-button {
+        text-decoration: none;
+        background-color: #120f0b;
+        color: rgb(206, 206, 206);
+        display: inline-block;
+        position: relative;
+        padding: 5px 5px;
+        border: 1px solid;
+        border-image: linear-gradient(180deg, #0a7049, #09533e, #0e5c3b, #035432);
+        border-image-slice: 1;
+        margin: 5px 5px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: 2px;
+        transition: .8s cubic-bezier(.165, .84, .44, 1);
+      }
+      .pressed-button:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 0;
+        width: 100%;
+        z-index: -1;
+        color: rgb(180, 180, 180);
+        background: linear-gradient(180deg, #02c33c, #09a204, #05c712, #018217);
+        transition: .8s cubic-bezier(.165, .84, .44, 1);
+      }
+      .pressed-button:hover {
+        background: rgba(255, 255, 255, 0);
+      }
+      .pressed-button:hover:before {
+        bottom: 0%;
+        top: auto;
+        height: 100%;
+      }
+    
+
+
+    .zayav {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 30px;
+      background-color: #120f0b;
+      margin: 10px 20px;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #4aad26;
+      border-radius: 8px;
+      font-family: 'Montserrat', sans-serif;
+      color: #45b52c;
+      transition: .2s ease-in-out;
+    }
+    .zayav:before {
+      content: "";
+      background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: -8px;
+      left: -75px;
+      transform: skewX(-45deg);
+    }
+    .zayav:hover {
+      background: #68b328;
+      color: rgb(47, 47, 47);
+    }
+    .zayav:hover:before {
+      left: 150px;
+      transition: .5s ease-in-out;
+    }
+    .text-23 {
+      margin-left: 1.50601%;
+      font-family: Manrope;
+      font-size: 0.75em;
+      font-weight: 400;
+      color: rgb(186, 186, 186);
+    }
+    
